@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .slideshow {
+      width: 100%;
+      max-width: 600px;
+      height: 300px;
+      margin: 3.5%;
+      margin-left: 20%;
+    }
+
+    .slideshow img {
+      position: absolute;
+      height: 600px;
+      width: 1000px;
+      animation: fade 12s infinite;
+    }
+
+    .slideshow img:nth-child(1) {
+      animation : infinite;
+    }
+
+    .slideshow img:nth-child(2) {
+      animation: infinite;
+    }
+
+    .slideshow img:nth-child(3) {
+      animation: infinite;
+    }
+
+   
+
+    @media screen 
+    {
+        .slideshow 
+        {
+            img:nth-child(1) { animation-delay: 0s; }
+            img:nth-child(2) { animation-delay: 4s; }
+            img:nth-child(3) { animation-delay: 8s; }
+        }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="slideshow">
+    <img src="./animal-lg-1.jpg" alt="Slide 1">
+    <img src="./bg-1.jpg" alt="Slide 2">
+    <img src="./carousel-2.jpg" alt="Slide 3">
+  </div>
+
+</body>
+</html>

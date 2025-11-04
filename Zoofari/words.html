@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alphabet Animation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #121212;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .text {
+      display: flex;
+      font-size: 3rem;
+      gap: 10px;
+    }
+
+    .text span {
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeUp 1s forwards;
+    }
+
+    /* Delay each letter */
+    .text span:nth-child(1)  { animation-delay: 0s; }
+    .text span:nth-child(2)  { animation-delay: 0.2s; }
+    .text span:nth-child(3)  { animation-delay: 0.4s; }
+    .text span:nth-child(4)  { animation-delay: 0.6s; }
+    .text span:nth-child(5)  { animation-delay: 0.8s; }
+    .text span:nth-child(6)  { animation-delay: 1s; }
+    .text span:nth-child(7)  { animation-delay: 1.2s; }
+    .text span:nth-child(8)  { animation-delay: 1.4s; }
+    .text span:nth-child(9)  { animation-delay: 1.6s; }
+    .text span:nth-child(10) { animation-delay: 1.8s; }
+    .text span:nth-child(11) { animation-delay: 2s; }
+    .text span:nth-child(12) { animation-delay: 2.2s; }
+
+    @keyframes fadeUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Example text: "HELLO WORLD" -->
+  <div class="text">
+    <span>H</span>
+    <span>E</span>
+    <span>L</span>
+    <span>L</span>
+    <span>O</span>
+    <span>&nbsp;</span>
+    <span>W</span>
+    <span>O</span>
+    <span>R</span>
+    <span>L</span>
+    <span>D</span>
+    <span>!</span>
+  </div>
+
+</body>
+</html>
